@@ -1,5 +1,5 @@
 <template>
-  <button class="g-button" @click="handler">按钮</button>
+  <button class="g-button" @click="handler">按钮1</button>
 </template>
 
 <script>
