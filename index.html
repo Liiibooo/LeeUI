@@ -12,7 +12,17 @@
 
 <body>
     <div id="app">
-        <g-button></g-button>
+        <g-button icon="love">
+            按钮
+        </g-button>
+        <g-button icon="love"
+                  icon-position="left">
+            按钮
+        </g-button>
+        <g-button icon="love"
+                  icon-position="right">
+            按钮
+        </g-button>
     </div>
 </body>
 <style>
@@ -40,7 +50,13 @@
     #app {
         margin: 20px;
     }
+
+    .icon {
+        width: 1em;
+        height: 1em;
+    }
 </style>
 <script src="./src/app.js"></script>
+<script src="//at.alicdn.com/t/font_1521021_1a7wv3c3u8l.js"></script>
 
 </html>
