@@ -1,0 +1,23 @@
+{
+  "name": "vue-gulu",
+  "version": "0.0.1",
+  "description": "自己构造vue组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liiibooo/vue-gulu.git"
+  },
+  "keywords": [
+    "vue",
+    "ui"
+  ],
+  "author": "Leeboo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Liiibooo/vue-gulu/issues"
+  },
+  "homepage": "https://github.com/Liiibooo/vue-gulu#readme"
+}
