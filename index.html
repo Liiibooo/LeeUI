@@ -12,17 +12,26 @@
 
 <body>
     <div id="app">
-        <g-button icon="love">
-            按钮
-        </g-button>
         <g-button icon="love"
+                  :loading="isLoading1"
+                  @handle-click="isLoading1 = !isLoading1"
                   icon-position="left">
             按钮
         </g-button>
         <g-button icon="love"
+                  :loading="isLoading2"
+                  @handle-click="isLoading2 = !isLoading2"
+                  icon-position="left">
+            按钮
+        </g-button>
+        <g-button icon="love"
+                  :loading="isLoading3"
+                  :loading="isLoading3"
+                  @handle-click="isLoading3 = !isLoading3"
                   icon-position="right">
             按钮
         </g-button>
+
     </div>
 </body>
 <style>
@@ -50,13 +59,8 @@
     #app {
         margin: 20px;
     }
-
-    .icon {
-        width: 1em;
-        height: 1em;
-    }
 </style>
 <script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_1521021_1a7wv3c3u8l.js"></script>
+<script src="//at.alicdn.com/t/font_1521021_8xqryvg24dl.js"></script>
 
 </html>

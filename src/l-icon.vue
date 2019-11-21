@@ -1,9 +1,7 @@
 <template>
-  <div>
     <svg class="l-icon">
       <use :xlink:href=`#i-${name}`></use>
     </svg>
-  </div>
 </template>
 
 <script>
@@ -16,6 +14,5 @@ export default {
 .l-icon {
   width: 1em;
   height: 1em;
-  display: block;
 }
 </style>
