@@ -2,13 +2,10 @@
   <button class="g-button"
           :class="{[`icon-${iconPosition}`]:true}"
           @click="handler">
-    <svg class="icon">
-      <use :xlink:href=`#i-${icon}`></use>
-    </svg>
-
-   <div class="content">
+    <l-icon class="icon" :name="icon" v-if="icon"></l-icon>
+    <div class="content">
       <slot></slot>
-   </div>
+    </div>
   </button>
 </template>
 
@@ -19,7 +16,11 @@ export default {
       type: String
     },
     iconPosition: {
-      type: String
+      type: String,
+      default: "left",
+      validator(value) {
+        return value === "left" || value === "right";
+      }
     }
   },
   data() {
