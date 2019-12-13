@@ -12,26 +12,38 @@
 
 <body>
     <div id="app">
-        <g-button icon="love"
-                  :loading="isLoading1"
-                  @handle-click="isLoading1 = !isLoading1"
-                  icon-position="left">
-            按钮
-        </g-button>
-        <g-button icon="love"
-                  :loading="isLoading2"
-                  @handle-click="isLoading2 = !isLoading2"
-                  icon-position="left">
-            按钮
-        </g-button>
-        <g-button icon="love"
-                  :loading="isLoading3"
-                  :loading="isLoading3"
-                  @handle-click="isLoading3 = !isLoading3"
-                  icon-position="right">
-            按钮
-        </g-button>
-        <div id="test"></div>
+        <div class="box">
+            <l-input value="张三"
+                     :disabled="true"></l-input>
+            <l-input value="李四"
+                     readonly></l-input>
+            <l-input value="王五"></l-input>
+        </div>
+        <div class="box">
+            <l-input value="王"
+                     error="姓名不能少于两个字"></l-input>
+        </div>
+        <div style="margin:20px;">
+            <g-button icon="love"
+                      :loading="isLoading1"
+                      @handle-click="isLoading1 = !isLoading1"
+                      icon-position="left">
+                按钮
+            </g-button>
+            <g-button icon="love"
+                      :loading="isLoading2"
+                      @handle-click="isLoading2 = !isLoading2"
+                      icon-position="left">
+                按钮
+            </g-button>
+            <g-button icon="love"
+                      :loading="isLoading3"
+                      :loading="isLoading3"
+                      @handle-click="isLoading3 = !isLoading3"
+                      icon-position="right">
+                按钮
+            </g-button>
+        </div>
     </div>
 </body>
 <style>
@@ -59,8 +71,12 @@
     #app {
         margin: 20px;
     }
+
+    .box {
+        margin: 20px;
+    }
 </style>
 <script src="./src/app.js"></script>
-<script src="//at.alicdn.com/t/font_1521021_8xqryvg24dl.js"></script>
+<script src="//at.alicdn.com/t/font_1521021_ib8082xfyh.js"></script>
 
 </html>
